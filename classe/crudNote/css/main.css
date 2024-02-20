@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.deconnex{
+ display: flex;
+ position: absolute;
+ right: 110px;
+ bottom: 4.8px;
+ background-color: #2bc48a;
+ border: 1px solid #2bc48a;
+ cursor: pointer;
+ color: #fff;
+ text-transform: uppercase;
+ padding:0;
+ border-bottom-left-radius: 0;
+ border-bottom-right-radius:0;
+ margin-bottom:0;
+}
+
+
+.body{
+ background-color:#e96711;
+ /*
+ #1eefd6
+ #191b1b
+ ;#e97116;
+ #ef7d31 */
+}
+
+.image-de-font{  
+ background-image: url("image/img-login3.webp");
+ background-size: 100%;
+ background-repeat: no-repeat;
+ background-attachment: scroll;  
+ height: 500px; 
+ padding-top: 2px; 
+}
+
+.image-user{
+ text-align: center;   
+ width: 20px;
+ border-radius: 50%;
+ position: absolute;
+ right: 35px;
+ bottom: 9px;
+ cursor: pointer;
+}
+
+
+.user-info{
+ display: none;    
+ background: #fff;
+ box-shadow: 0 5px 15px 0 rgb(0,0,0,.5) ;
+ position: absolute;
+ padding: 1rem;
+ margin: 3.4rem 4rem -1rem 47.9rem;
+ z-index: 1;
+}
+
+.user-info h2{
+ font-family: cambria;
+ font-weight: 800;
+ color: orange;
+ font-size: 19px;
+}
+
+.user-info h4{
+ font-family: cambria;
+ font-size: 18px;
+ color:#585858;
+}
+
+.user{
+ position: absolute;
+ right: -4px;
+ bottom: 9px;  
+}
+
+/*Mise en forme du formulaire*/
+.form{
+ background-color: #f6f8f8;
+ padding: 25px;
+ box-shadow: 0 0 10px rgb(0,0,0,0.2);
+}
+
+form.form{
+ border-radius: 8px;
+ border: 6px solid #fff370;
+}
+
+.form{
+ display: flex;
+ width: 30px;
+ justify-content: center;
+ flex-direction: column;
+ margin-top: 16px;
+ margin-bottom: 80px;
+}
+
+input{
+    text-transform: uppercase;
+}
+input{
+    padding: 5px;
+    border: 1px solid #999;
+    outline: 0;
+    margin-top: 2px;
+}
+input:focus{
+ border: 1px solid #ffcb61;   
+}
+input[type="submit"]{
+    margin-top: 25px;
+    background-color: #2bc48a;
+    border: 1px solid #2bc48a;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.UserProblem{
+ margin-top: 12px;
+ margin-bottom: 12px;
+ width: 400px;
+}
+
+#pe{
+ margin-right: 100px ;
+}
+
+#pm{
+ margin-right: 100px ;
+}
+
+#inscription{
+ color: blue;   
+ border:none;   
+ background: none;
+}
+
+#button{
+ width: 50px;
+ border-color: rgb(237, 243, 237); 
+ color:#333;
+ transform: scale(1);
+}
+
+#button:hover{
+ background-color: #e9d711;
+}
+
+.txt-center{
+ display: flex;
+ align-items: stretch;
+ justify-content: center;
+}
+
+/* Mise en forme des boite 
+
+.item{  
+ width: min-content;
+}
+
+.titre{
+ font-size: 25px;
+ color: #fff;
+ font-weight: bold;
+ margin-bottom: 25px;
+}
+   
+.item{
+ margin: 40px 10px;
+ background-color: #fff;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, .3); 
+ transition: transform 0.3s;
+ transform: translate3d(0, -1px, 0);
+}
+   
+.item-image{
+ display: block;
+ width: 100%;
+ height: auto;
+}
+.item-body{
+ padding: 25px;
+}
+   
+h4{
+ font-size: 25px;
+ font-weight: bold;
+ margin-bottom: 5px;
+ color:#232323
+}
+   
+h5{
+  
+ font-family: Tahoma, sans-serif;  
+ color: #585858;
+}
+
+*/
+
+
+
+
+
+.card{ 
+ margin: 6px;
+}
+
+h4, h5, small{
+font-family: Tahoma;    
+
+font-weight: bold;    
+margin-left: 18px;
+}
+
+.card-text{
+padding: 6px;    
+margin-left: 12px;
+text-wrap: wrap;
+text-size-adjust: 16px;
+color: #585858;
+}
+
+#button:hover{
+ background: #d78604;
+ border:none;
+ color: #fff;
+ font-size: 19px;
+ font-family: Cambria;
+ font-weight: 600;
+ text-transform: capitalize;
+}
+
+
+/* Mise en forme du formulaire de vote (etoile) */
+
+.starRating:not(old){
+    display : inline-block;
+    width: 7.5rem;
+    overflow: hidden;
+    vertical-align: bottom; 
+    }
+    .starRating:not(old) > input{
+    margin-right: -100px;
+    opacity: 0;
+    }
+    
+    .starRating:not(old) > label{
+    display: block;
+    float: right;
+    position: relative;
+    background: url('https://upload.wikipedia.org');
+    background-size: contain;
+    }
+    
+    .starRating:not(old) > label:before{
+    content : '';
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url('https: //upload .wikipedia .org/commons/ 4px;') ;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    }
+
+    .starRating:not(old) > label:hover:before,
+    .starRating:not(old) > label:hover ~ label:hover:after,
+    .starRating:not(old) > :checked ~ label:hover {
+     opacity: 1;
+    }
+
+
+    .txt-center {
+        text-align: center;
+    }
+    .hide {
+        display: none;
+    }
+    
+    .clear {
+        float: none;
+        clear: both;
+    }
+    
+    .rating {
+        width: 90px;
+        unicode-bidi: bidi-override;
+        direction: rtl;
+        text-align: center;
+        position: relative;
+    }
+    
+    .rating > label {
+        float: right;
+        display: inline;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        width: 1.1em;
+        cursor: pointer;
+        color: #000;
+    }
+    
+    .rating > label:hover,
+    .rating > label:hover ~ label,
+    .rating > input.radio-btn:checked ~ label {
+        color: transparent;
+    }
+
+
+    .form {
+    margin:0;
+}
+
+.form li {
+    list-style:none;
+}
+
+.hide {
+    display:none;
+}
+
+.rating input[type="radio"] {
+    position:absolute;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity:0;
+    opacity:0;
+    cursor:pointer;
+    width:17px;
+}
+
+.rating span {
+    width:24px;
+    height:16px;
+    line-height:16px;
+    padding:1px 22px 1px 0; /* 1px FireFox fix */
+    background:url(stars.png) no-repeat -22px 0;
+}
+
+.rating input[type="radio"]:checked + span {
+    background-position:-22px 0;
+}
+
+.rating input[type="radio"]:checked + span ~ span {
+    background-position:0 0;
+}
+
+@media screen and (max-width:1384px){
+
+    .user-info{
+     /* background: red; */
+     margin: 3.4rem 4rem -1rem 41rem;
+    } 
+}    
+   
+   
+@media screen and (max-width:1115px){
+   
+    .user-info{
+     /* background: red; */
+     margin: 3.4rem 4rem -1rem 29.7rem;
+    }
+}    
+@media screen and (max-width:659px){
+
+ .user-info{
+  /* background: red; */
+  margin: 3.4rem 4rem -1rem 19.6rem;
+ }
+} 
+   
+    
+@media screen and (max-width:1384px){
+ .user-info{
+ /* background: red; */
+ margin: 3.4rem 4rem -1rem 41rem;
+ } 
+
+}
+   
+   
+@media screen and (max-width:1115px){ 
+ .user-info{
+  /* background: red; */
+  margin: 3.4rem 4rem -1rem 29.7rem;
+ }
+} 
+
+@media screen and (max-width:375px){
+ .deconnex{
+  left: 20px;
+ }
+  .user-info{
+  margin: 3.4rem 4rem 1rem 9.2rem;
+ }
+}  
+
+@media screen and (max-width:414px){
+ .deconnex{
+  left: 20px;
+ }
+  .user-info{
+  margin: 3.4rem 4rem -9rem 11.6rem;
+ }
+}
+
+@media screen and (max-width:430px){
+ .deconnex{
+   left: 20px;
+ }
+  .user-info{
+  margin: 3.4rem 4rem 1rem 12.6rem;
+ }
+}
+@media screen and (max-width:360px){
+ .deconnex{
+  left: 20px;
+ }
+  .user-info{
+  margin: 3.4rem 4rem 1rem 8.3rem;
+ }
+}
+
+@media screen and (max-width:412px){
+ .deconnex{
+  left: 20px;
+ }
+  .user-info{
+  margin: 3.4rem 4rem 1rem 11.5rem;
+ }
+}
+    
+
